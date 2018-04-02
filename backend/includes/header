@@ -1,0 +1,21 @@
+
+				<!-- Header -->
+					<header id="header" class="alt" style="padding:10px">
+						
+					</header>
+					
+					<!-- Navigations -->
+					<nav id="nav">
+						<ul>
+							<li><a href="monitor.php">Monitor</a></li>
+							<li><a href="sub.php" >Submissions</a></li>
+							<li><a href="templates.php" >Templates</a></li>
+							<li><a href="index.php" <?php if (stripos($_SERVER['REQUEST_URI'],'index.php') !== false) {echo 'class="active"';} ?>>Users</a></li>
+							<li><a href="dbbackup.php" <?php if (stripos($_SERVER['REQUEST_URI'],'dbbackup.php') !== false) {echo 'class="active"';} ?> >Database</a></li>
+							<li><a href="changepass.php" <?php if (stripos($_SERVER['REQUEST_URI'],'changepass.php') !== false) {echo 'class="active"';} ?>>Account</a></li>
+							<li><a href="../logout.php">Logout</a></li>
+						</ul>
+					</nav>
+			
+			
+<!-- <?php if (stripos($_SERVER['REQUEST_URI'],'index.php') !== false) {echo 'class="active"';} ?> --!>

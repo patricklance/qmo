@@ -1,0 +1,22 @@
+				<div id="container">
+				<header id="header" class="alt">
+						
+					</header>
+						
+					
+				</div>
+
+			
+			<!-- Navigations -->
+					<nav id="nav">
+						<ul>
+							<!-- <?php if(!isset($_SESSION['user_id'])):?> <li><a href="home.php" class="active" >Home</a></li> <?php endif; ?> -->
+							<li><a href="index.php" <a href="index.php" <?php if (stripos($_SERVER['REQUEST_URI'],'index.php') !== false) {echo 'class="active"';} ?> >Home</a></li>
+							<?php if(isset($_SESSION['user_id'])): ?> 
+							<li><a href="reports.php">Reports</a></li>
+							<li><a href="changepass.php"<?php if (stripos($_SERVER['REQUEST_URI'],'changepass.php') !== false) {echo 'class="active"';} ?>>Account</a></li>
+							<li><a href="logout.php">Logout</a></li>
+							<?php endif;?>
+						</ul>
+					</nav>
+
